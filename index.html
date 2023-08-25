@@ -11,16 +11,20 @@
               <p>Selecione os ingredientes adicionais.</p>
               
               <h3>Complementos:</h2>
-              <input type="checkbox" name="complemento[]" value="ninho"> + Ninho <br>
+              <input type="checkbox" name="complemento[]" value="ninho"> + Ninho <br> 
               <input type="checkbox" name="complemento[]" value="pacoca"> + Paçoca<br>
               <input type="checkbox" name="complemento[]" value="chocoball"> + Chocoball <br>
               <input type="checkbox" name="complemento[]" value="leite_conden"> + Leite condensado <br>
               <input type="checkbox" name="complemento[]" value="amendoin"> + Amendoin <br>
+                 <!--No caso do checkbox, "name" deve ser aberto em array 
+                  por se tratar de opçãoes de múltiplas escolhas (listas) -->
 
               <h3>Itens</h2>
               <p>Deseja talher?</p>
               <input type="radio" name="talher" value="sim"> Sim
               <input type="radio" name="talher" value="nao"> Não
+                <!--Em radio o "name" recebe o mesmo valor, porém os "values" devem ser distintos
+                por se tratar de input boolean-->
 
               <h3>Frutas</h2>
               <p>Escolha até <strong>1 fruta</strong>.</p>
