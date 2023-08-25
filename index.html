@@ -3,34 +3,41 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Formulários: Inputs</title>
+            <title>Checkbox e radio</title>
         </head>
         <body>
-            <h1>Aprendendo sobre inputs</h1><hr>
-            <form>
-                <!--Abre uma caixa de texto-->
-                <label>Text: </label><input type="text" /><br>
-                
-                <!--Abre uma caixa de números podendo definir um max e min-->
-                <label>Number: </label><input type="number" min="0" max="99"/><br>
+            <form method="get"> <!--Method "get" para verificar oq foi mandado para o servidor pela URL-->
+              <h1>Loja de açaí.</h1>
+              <p>Selecione os ingredientes adicionais.</p>
+              
+              <h3>Complementos:</h2>
+              <input type="checkbox" name="complemento[]" value="ninho"> + Ninho <br>
+              <input type="checkbox" name="complemento[]" value="pacoca"> + Paçoca<br>
+              <input type="checkbox" name="complemento[]" value="chocoball"> + Chocoball <br>
+              <input type="checkbox" name="complemento[]" value="leite_conden"> + Leite condensado <br>
+              <input type="checkbox" name="complemento[]" value="amendoin"> + Amendoin <br>
 
-                <!--Abre uma caixa exclusiva para  e-mail-->
-                <label>E-mail: </label><input type="email"/><br>
+              <h3>Itens</h2>
+              <p>Deseja talher?</p>
+              <input type="radio" name="talher" value="sim"> Sim
+              <input type="radio" name="talher" value="nao"> Não
 
-                <!--Abre uma caixa pra pickar um cor-->
-                <label>Color: </label><input type="color"/><br>
+              <h3>Frutas</h2>
+              <p>Escolha até <strong>1 fruta</strong>.</p>
+              <input type="checkbox" name="fruta" value="morango"> + Morango <br>
+              <input type="checkbox" name="fruta" value="banana"> + Banana <br>
+              <input type="checkbox" name="fruta" value="uva"> + Uva <br>
 
-                <!--Abre uma caixa para volumes podendo estipular um max e min-->
-                <label>Range: </label><input type="range" min="0" max="100"/><br>
+              <h3>Bebida</h2>
+              <p>Deseja bebida?</p>
+              <input type="radio" name="bebida" value="agua"> Água <br>
+              <input type="radio" name="bebida" value="refri"> Refrigerante <br>
+              <input type="radio" name="bebida" value="suco"> Suco <br>
+              <input type="radio" name="bebida" value="nao"> Não <br>
 
-                <!--Abre uma checkbox livre para marcar mais de uma opção-->
-                <label>CheckBox: </label><input type="checkbox"/><input type="checkbox"/><br>
+              <button type="submit">Enviar</button>
 
-                <!--Abre um radio de uma única escolha-->
-                <label>Radio: </label><input type="radio" name="aceita"><input type="radio" name="Recusa"><br>
-
-                <!--Habilita um botão para o formulário-->
-                <label>Button: </label><input type="submit" value="Enviar">
             </form>
+    
         </body>
-</html>
+    </html>
